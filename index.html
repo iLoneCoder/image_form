@@ -13,7 +13,13 @@
                 <h1 class="form-title">Image Form</h1>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control model" id="model" name="model" placeholder="Choose available model..." required>
+                <input type="text" class="form-control model" id="model" name="model" placeholder="Choose available model..." required autocomplete="off">
+                <div class="options_wrapper">
+                    <ul>
+                        <li role="menuitem" tabindex="0">microsoft</li>
+                        <li role="menuitem" tabindex="0">facebook</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="form-group">
@@ -23,8 +29,14 @@
             <div class="btn-wrapper">
                 <button type="submit">Submit</button>
             </div>
+
+            <div class="result">
+                <h2>SUCCESS!!!</h2>
+            </div>
         </form>
+        
     </div>
+
 
     <script src="./index.js"></script>
 </body>
